@@ -31,4 +31,5 @@ class BishopBlackTest {
         Cell[] actual = {Cell.D2, Cell.E3, Cell.F4, Cell.G5};
         assertThat(Arrays.equals(result, actual)).isTrue();
     }
+
 }
