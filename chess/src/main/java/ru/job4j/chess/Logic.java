@@ -25,7 +25,9 @@ public final class Logic {
         for (Figure figure : figures) {
             for (Cell step : steps) {
                 if (figure.position().equals(step)) {
-                    throw new OccupiedCellException();
+                    throw new OccupiedCellException(
+                            "The move is impossible, there is an occupied cell in the way"
+                    );
                 }
             }
         }
